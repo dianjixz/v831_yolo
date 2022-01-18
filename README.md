@@ -41,7 +41,7 @@ pip3 install pycocotools
 
 2、 编译 onnx2ncnn 工具
 
- 工具github地址：https://github.com/Tencent/ncnn.git  
+ 工具 github 地址：https://github.com/Tencent/ncnn.git  
 
  安装过程 ：
 ~~~ bash
@@ -82,7 +82,7 @@ export PATH=$PATH:`pwd`/tools/onnx
 
 ### 数据集准备  
 
-YOLOv2默认使用voc格式的数据集,文件夹取名为 custom 放到 data 目录下, 比如:
+YOLOv2 默认使用 voc 格式的数据集,文件夹取名为 custom 放到 data 目录下, 比如:
 ~~~ bash
 #voc格式的yolo训练数据集
 ├── custom    #数据集文件夹名
@@ -101,7 +101,7 @@ val.txt  写着用于验证的图片名称
 ~~~
 \* 修改配置
 
-修改`data/custom.py`中的`CUSTOM_CLASSES`变量为正确的 `labels`
+修改 `data/custom.py` 中的 `CUSTOM_CLASSES` 变量为正确的 `labels`
 ~~~ python
 CUSTOM_CLASSES = [
     "mouse",
@@ -188,7 +188,7 @@ while True:
 
 运行效果图:
 
-![](./YOLO/yolo_test.jpg)
+![](./yolo_test.jpg)
 
 检测说明到此结束.
 
