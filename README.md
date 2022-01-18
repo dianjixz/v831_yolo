@@ -20,7 +20,7 @@ torchsummary ： 格式化打印模型信息。
 文章参考：
 
 * 显卡驱动安装：https://neucrack.com/p/252
-* opencv多版本共存：https://neucrack.com/p/349
+* opencv 多版本共存：https://neucrack.com/p/349
 
 
 1、  安装pytorch 、torchsummary
@@ -39,7 +39,7 @@ pip3 install pycocotools
 ~~~
 
 
-2、 编译onnx2ncnn工具
+2、 编译 onnx2ncnn 工具
 
  工具github地址：https://github.com/Tencent/ncnn.git  
 
@@ -64,7 +64,7 @@ cmake -DCMAKE_BUILD_TYPE=Release -DNCNN_VULKAN=ON -DNCNN_SYSTEM_GLSLANG=OFF -DNC
 make
 ~~~
 
-编译完后你就得到了ncnn的模型转换工具。
+编译完后你就得到了 ncnn 的模型转换工具。
 
 在 ncnn/build/tools/onnx 目录下，能得到 **onnx2ncnn** 模型转换工具，将该可执行文件加入到环境变量中方便使用。
 
@@ -78,7 +78,7 @@ export PATH=$PATH:`pwd`/tools/onnx
 
 ## 图像检测
 
-图像检测主要采用的模型是YOLOv2，由pytorch架构训练完成，经由网络模型转换后部署到v831上。  
+图像检测主要采用的模型是 YOLOv2 ，由 pytorch 架构训练完成，经由网络模型转换后部署到 v831 上。  
 
 ### 数据集准备  
 
