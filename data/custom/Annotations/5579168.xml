@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>5579168.jpg</filename>
+	<path>C:\Users\ll\Desktop\images\5579168.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>sipeed_logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>77</xmin>
+			<ymin>46</ymin>
+			<xmax>175</xmax>
+			<ymax>142</ymax>
+		</bndbox>
+	</object>
+</annotation>

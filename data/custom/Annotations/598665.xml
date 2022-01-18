@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>598665.jpg</filename>
+	<path>C:\Users\ll\Desktop\images\598665.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mouse</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>10</xmin>
+			<ymin>123</ymin>
+			<xmax>75</xmax>
+			<ymax>180</ymax>
+		</bndbox>
+	</object>
+</annotation>
