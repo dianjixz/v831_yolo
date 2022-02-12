@@ -162,7 +162,7 @@ if __name__ == "__main__":
     n_anchors = args.num_anchorbox
     size = args.input_size
     dataset = args.dataset
-    
+    annotation = None
     loss_convergence = 1e-6
     iters_n = 1000
 

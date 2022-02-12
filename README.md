@@ -130,6 +130,32 @@ python test.py -d custom -v slim_yolo_v2 --trained_model weights/custom/slim_yol
 
 运行导出模型命令后会在 out 目录下生成 test 测试图片效果和模型文件,模型转换请参考上面模型转换章节.
 
+### 模型转换  
+
+在线转换需要上传一个压缩包文件.  
+- 该功能只能支持上传一个无密码的 zip 压缩包  
+- 压缩包内需要包含一个 images 目录，一个 xxx.bin，一个 xxx.param  
+- 需要将矫正图片放入 images 目录内；矫正图片集可考虑直接采用训练中的验证数据集，并务必保证矫正时图像的预处理方式与训练和部署时一致。  
+> 注意：确保 images 目录内没有混入其他文件，否则会导致模型量化错误。
+
+zip 压缩包目录结构
+~~~ bash
+└─xxxx.zip
+    |─ images
+    |    |- xxx.jpg
+    |    |- ...
+    |    ...
+    |
+    |- xxx.bin
+    └─ xxx.param
+~~~
+
+制作好压缩包后打开网址: [https://maixhub.com/modelConvert](https://maixhub.com/modelConvert) 查看使用说明。  
+
+![](https://neucrack.com/image/1/358/maixhub.jpg)  
+
+登陆后,上传你的压缩包等待模型转换任务完成。    
+
 ### 模型部署  
 等待模型转换完成,下载转换好的模型文件.  
 得到的 *.param 和 *.bin 文件就是部署在 v831 上的文件.  
