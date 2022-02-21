@@ -113,6 +113,11 @@ CUSTOM_CLASSES = [
 
 ~~~ bash
 python train.py -d custom --cuda -v slim_yolo_v2 -hr -ms
+
+
+# -d custom               使用 custom 数据集  
+# --cuda                  使用英伟达显卡训练(如果使用 CPU 训练则需要去掉该参数)  
+# -v slim_yolo_v2         使用 slim_yolo_v2 检测模型  
 ~~~
 
 [//]: # "或者安装好horovod, 然后多卡训练"
@@ -124,8 +129,16 @@ python train.py -d custom --cuda -v slim_yolo_v2 -hr -ms
 
 ### 导出模型
 
-~~~ ba
+~~~ bash
 python test.py -d custom -v slim_yolo_v2 --trained_model weights/custom/slim_yolo_v2/slim_yolo_v2_1000.pth --visual_threshold 0.3 -size 224 --export
+
+
+# -d custom                                                               使用 custom 数据集  
+# -v slim_yolo_v2                                                         使用 slim_yolo_v2 检测模型  
+# --trained_model weights/custom/slim_yolo_v2/slim_yolo_v2_1000.pth       使用第 1000 次训练的模型参数(有经验者可以自行更换)  
+# --visual_threshold 0.3                                                  检测阈值设定为 0.3  
+# -size 224                                                               图片尺寸为 224 X 224  
+# --export                                                                测试完图片后导出 oxnn 模型(不加此选项需要手动将 pytorch 模型转成 oxnn 模型)  
 ~~~
 
 运行导出模型命令后会在 out 目录下生成 test 测试图片效果和模型文件,模型转换请参考上面模型转换章节.
