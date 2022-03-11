@@ -25,7 +25,7 @@ from utils.customapi_evaluator import CustomAPIEvaluator
 # cards_id = [0, 1, 2, 3]
 # use_horovod = True
 
-cards_id = [5]
+cards_id = [0]
 use_horovod = False
 
 
