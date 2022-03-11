@@ -118,14 +118,14 @@ python train.py -d custom --cuda -v slim_yolo_v2 -hr -ms
 # -d custom               使用 custom 数据集  
 # --cuda                  使用英伟达显卡训练(如果使用 CPU 训练则需要去掉该参数)  
 # -v slim_yolo_v2         使用 slim_yolo_v2 检测模型 
-# 如果使用在 windows 下训练 请使用下面命令:
 
-# python train.py -d custom --cuda -v slim_yolo_v2 -hr -ms --num_workers 0
-
-# --num_workers 运行线程数
 
 ~~~
 
+
+[//]: # "如果使用在 windows 下训练 请使用下面命令:"
+[//]: # "python train.py -d custom --cuda -v slim_yolo_v2 -hr -ms --num_workers 0"
+[//]: # "--num_workers 运行线程数"
 [//]: # "或者安装好horovod, 然后多卡训练"
 [//]: # "~~~ bash"
 [//]: # "horovodrun -np 4 python train.py -d custom --cuda -v slim_yolo_v2 -hr -ms"
